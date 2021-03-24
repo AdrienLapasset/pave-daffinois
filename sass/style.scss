@@ -1,0 +1,17 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap");
+
+// Bootstrap media breakpoints
+@import "../modules/bootstrap-4.5.3/scss/functions";
+@import "../modules/bootstrap-4.5.3/scss/variables";
+@import "../modules/bootstrap-4.5.3/scss/mixins/_breakpoints";
+
+// Colors
+$gold: #f7e285;
+
+// Partials
+@import "base";
+@import "common";
+@import "home";
+@import "gagne";
+@import "mentions";

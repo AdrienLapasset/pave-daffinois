@@ -1,0 +1,78 @@
+body {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-image: url('../assets/imgs/fond.jpg');
+}
+
+.header {
+  img {
+    @include media-breakpoint-up(lg) {
+      max-width: 260px;
+    }
+  }
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.btn-primary {
+  background-color: #f0b83a;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 18px;
+
+  &:hover {
+    background-color: $gold;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+  }
+
+  &:after {
+    content: '';
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    left: 12px;
+    position: relative;
+    top: 4px;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+
+    @include media-breakpoint-up(lg) {
+      top: 6px;
+    }
+  }
+}
+
+.footer {
+  margin: 100px 0 20px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+
+  a {
+    font-size: 14px;
+    color: white;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+    }
+  }
+}

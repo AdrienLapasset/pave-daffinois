@@ -1,0 +1,203 @@
+.home {
+  background-image: url('../assets/imgs/fond-home.jpg');
+
+  h1 {
+    text-align: center;
+    font-family: "Elkwood";
+    color: $gold;
+    font-size: 40px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, .75);
+    margin-top: 20px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 50px;
+    }
+  }
+
+  .description {
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+    color: white;
+    border-bottom: 1px solid white;
+    margin: 30px 0;
+    padding: 20px;
+    font-size: 20px;
+    max-width: 800px;
+
+
+    @include media-breakpoint-up(lg) {
+      font-size: 26px;
+    }
+  }
+
+  .form {
+    width: 100%;
+    max-width: 800px;
+
+    %input-code-font {
+      font-family: "Elkwood";
+      color: $gold;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-style: normal;
+    }
+
+    %input-font {
+      color: #888888;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    input:not([type="checkbox"]) {
+      width: 100%;
+      height: 70px;
+      border-radius: 20px;
+      border: none;
+      margin-bottom: 10px;
+      padding: 25px;
+      @extend %input-font;
+
+      &.code {
+        background-color: #39434b;
+        border: 2px solid $gold;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+        @extend %input-code-font;
+
+        &::placeholder {
+          @extend %input-code-font;
+        }
+      }
+
+      &::placeholder {
+        @extend %input-font;
+      }
+
+    }
+
+
+    .iban {
+      position: relative;
+      width: 100%;
+      height: 70px;
+      border-radius: 20px;
+      background-color: white;
+      margin-bottom: 10px;
+
+      &:before {
+        top: 25px;
+        left: 25px;
+        @extend %input-font;
+        color: #888888;
+        position: absolute;
+        content: "IBAN*";
+        display: block;
+      }
+
+      input {
+        position: relative;
+        padding-left: 102px;
+        letter-spacing: 10px;
+        position: relative;
+        text-transform: uppercase;
+        background-color: transparent;
+      }
+
+      .square-container {
+        position: absolute;
+        display: flex;
+        top: 20px;
+        left: 100px;
+
+        span {
+          display: inline-block;
+          height: 30px;
+          width: 20px;
+          border: 1px solid #888888;
+          margin-right: 2px;
+        }
+      }
+    }
+
+    .row-input {
+      display: block;
+
+      @include media-breakpoint-up(lg) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &>div {
+        flex: 0 0 50%;
+
+        @include media-breakpoint-up(lg) {
+          &:first-child {
+            padding-right: 5px;
+          }
+
+          &:last-child {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    .photo {
+      label {
+        padding: 25px;
+        background: white;
+        height: 70px;
+        border-radius: 20px;
+        width: 100%;
+        @extend %input-font;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:before {
+          content: url('../assets/imgs/icone-photo.png');
+          margin-right: 10px;
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    .mentions-obligatoires {
+      color: white;
+    }
+
+    .conditions-container {
+      max-width: 450px;
+      margin: auto;
+
+      .checkbox {
+        margin: 20px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        input {
+          flex: 0 0 20px;
+          height: 20px;
+        }
+
+        label {
+          color: white;
+          font-weight: 400;
+          font-size: 20px;
+          margin-left: 10px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .conditions {
+      color: white;
+      text-align: justify;
+      font-size: 10px;
+    }
+  }
+}

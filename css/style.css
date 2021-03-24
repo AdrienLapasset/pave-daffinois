@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap");
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Elkwood";
+  src: url("../assets/fonts/Elkwood.otf") format("opentype"), url("../assets/fonts/Elkwood.ttf") format("truetype");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-image: url("../assets/imgs/fond.jpg");
+}
+
+@media (min-width: 992px) {
+  .header img {
+    max-width: 260px;
+  }
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-primary {
+  background-color: #f0b83a;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #f7e285;
+}
+
+@media (min-width: 992px) {
+  .btn-primary {
+    font-size: 20px;
+  }
+}
+
+.btn-primary:after {
+  content: '';
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  left: 12px;
+  position: relative;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 992px) {
+  .btn-primary:after {
+    top: 6px;
+  }
+}
+
+.footer {
+  margin: 100px 0 20px;
+  text-shadow: 3px 3px 10px black;
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .footer a {
+    font-size: 16px;
+  }
+}
+
+.home {
+  background-image: url("../assets/imgs/fond-home.jpg");
+}
+
+.home h1 {
+  text-align: center;
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 40px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .home h1 {
+    font-size: 50px;
+  }
+}
+
+.home .description {
+  text-align: center;
+  text-shadow: 3px 3px 10px black;
+  color: white;
+  border-bottom: 1px solid white;
+  margin: 30px 0;
+  padding: 20px;
+  font-size: 20px;
+  max-width: 800px;
+}
+
+@media (min-width: 992px) {
+  .home .description {
+    font-size: 26px;
+  }
+}
+
+.home .form {
+  width: 100%;
+  max-width: 800px;
+}
+
+.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"])::-webkit-input-placeholder {
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"]):-ms-input-placeholder {
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"])::-ms-input-placeholder {
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"])::placeholder {
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"])::-webkit-input-placeholder, .home .form .iban:before, .home .form .photo label {
+  color: #888888;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"]):-ms-input-placeholder, .home .form .iban:before, .home .form .photo label {
+  color: #888888;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"])::-ms-input-placeholder, .home .form .iban:before, .home .form .photo label {
+  color: #888888;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"])::placeholder, .home .form .iban:before, .home .form .photo label {
+  color: #888888;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.home .form input:not([type="checkbox"]) {
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+
+.home .form input:not([type="checkbox"]).code {
+  background-color: #39434b;
+  border: 2px solid #f7e285;
+  text-shadow: 3px 3px 10px black;
+}
+
+.home .form .iban {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.home .form .iban:before {
+  top: 25px;
+  left: 25px;
+  color: #888888;
+  position: absolute;
+  content: "IBAN*";
+  display: block;
+}
+
+.home .form .iban input {
+  position: relative;
+  padding-left: 102px;
+  letter-spacing: 10px;
+  position: relative;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.home .form .iban .square-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 20px;
+  left: 100px;
+}
+
+.home .form .iban .square-container span {
+  display: inline-block;
+  height: 30px;
+  width: 20px;
+  border: 1px solid #888888;
+  margin-right: 2px;
+}
+
+.home .form .row-input {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .home .form .row-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.home .form .row-input > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media (min-width: 992px) {
+  .home .form .row-input > div:first-child {
+    padding-right: 5px;
+  }
+  .home .form .row-input > div:last-child {
+    padding-left: 5px;
+  }
+}
+
+.home .form .photo label {
+  padding: 25px;
+  background: white;
+  height: 70px;
+  border-radius: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.home .form .photo label:before {
+  content: url("../assets/imgs/icone-photo.png");
+  margin-right: 10px;
+}
+
+.home .form .photo input {
+  display: none;
+}
+
+.home .form .mentions-obligatoires {
+  color: white;
+}
+
+.home .form .conditions-container {
+  max-width: 450px;
+  margin: auto;
+}
+
+.home .form .conditions-container .checkbox {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.home .form .conditions-container .checkbox input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  height: 20px;
+}
+
+.home .form .conditions-container .checkbox label {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.home .form .conditions {
+  color: white;
+  text-align: justify;
+  font-size: 10px;
+}
+
+@media (min-width: 992px) {
+  .gagne .vous-avez-gagne {
+    max-width: 730px;
+  }
+}
+
+.gagne .euros {
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 100px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 992px) {
+  .gagne .euros {
+    font-size: 200px;
+    margin: -20px 0;
+  }
+}
+
+.gagne .gagne-footer {
+  text-align: center;
+}
+
+.gagne .gagne-footer .description {
+  color: white;
+  font-size: 20px;
+  text-shadow: 3px 3px 10px black;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+  .gagne .gagne-footer .description {
+    font-size: 25px;
+    max-width: 800px;
+  }
+}
+
+.mentions .title {
+  font-family: "Elkwood";
+  color: #f7e285;
+  font-size: 44px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+  margin: 30px 0;
+}
+
+@media (min-width: 992px) {
+  .mentions .title {
+    font-size: 100px;
+  }
+}
+
+.mentions .content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+@media (min-width: 992px) {
+  .mentions .content {
+    padding: 40px;
+  }
+}
+
+.mentions .content h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mentions .content p {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

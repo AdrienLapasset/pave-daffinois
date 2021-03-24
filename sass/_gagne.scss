@@ -1,0 +1,35 @@
+.gagne {
+  .vous-avez-gagne {
+    @include media-breakpoint-up(lg) {
+      max-width: 730px;
+    }
+  }
+
+  .euros {
+    font-family: "Elkwood";
+    color: $gold;
+    font-size: 100px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, .75);
+
+    @include media-breakpoint-up(lg) {
+      font-size: 200px;
+      margin: -20px 0;
+    }
+  }
+
+  .gagne-footer {
+    text-align: center;
+
+    .description {
+      color: white;
+      font-size: 20px;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+      margin-bottom: 80px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 25px;
+        max-width: 800px;
+      }
+    }
+  }
+}

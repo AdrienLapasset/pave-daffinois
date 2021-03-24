@@ -1,0 +1,33 @@
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Elkwood";
+  src: url("../assets/fonts/Elkwood.otf") format("opentype"),
+    url("../assets/fonts/Elkwood.ttf") format("truetype");
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+a {
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
