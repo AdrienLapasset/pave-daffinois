@@ -15,7 +15,7 @@
   <div class="container d-flex flex-column align-items-center">
     <?php include 'partials/header.php'; ?>
     <h1>Vous avez trouvé un ticket avec un code unique ?</h1>
-    <p class="description">Remplissez vite le formulaire ci-dessous pour découvrir combien vous avez gagné !</p>
+    <p class="description">Remplissez-vite le formulaire ci-dessous pour découvrir combien vous avez gagné !</p>
 
     <form class="form" action="">
       <input class="code" type="text" placeholder="Code Unique" required>
@@ -30,7 +30,7 @@
       </div>
       <div class="row-input">
         <div>
-          <input type="mail" placeholder="Adress mail*" required>
+          <input type="email" placeholder="Adress mail*" required>
         </div>
         <div>
           <input type="text" placeholder="Tèl*" required>
@@ -61,15 +61,15 @@
       <div class="conditions-container">
         <div class="checkbox">
           <input type="checkbox" name="rules" required>
-          <label for="scales">J’ai lu et j’accepte le règlement du jeu*</label>
+          <label for="scales">J’ai lu et j’accepte le <a href="reglement.php">règlement</a> du jeu*</label>
         </div>
         <div class="checkbox">
           <input type="checkbox" name="rules" required>
           <label for="scales">J’accepte que mes données personnelles
-            soient utilisées dans le cadre du jeu</label>
+            soient utilisées dans le cadre du jeu*</label>
         </div>
         <p class="conditions">
-          Pavé d’Affinois met en œuvre des traitements de données à caractère personnel ayant pour ﬁnalités la conservation des preuves d’achat, la gestion et le suivi de l’organisation de l’opération de jeu, la vériﬁcation et le contrôle du respect des dispositions du règlement de jeu, l’analyse de la régularité de la participation, la gestion de la relation avec les participants, le pilotage, le reporting et les statistiques. Vous disposez d’un droit d’accès, de rectiﬁcation, de portabilité, d’effacement de vos données à caractère personnel et de limitation du traitement de vos données ainsi que d’un droit d’opposition et du droit de déﬁnir des directives relatives à la conservation, à l’effacement et à la communication de vos données à caractère personnel après votre décès. Pour en savoir plus sur la protection de vos données, consultez l’article XX des modalités de l’Offre.
+          Pavé d’Affinois met en œuvre des traitements de données à caractère personnel ayant pour ﬁnalités la conservation des preuves d’achat, la gestion et le suivi de l’organisation de l’opération de jeu, la vériﬁcation et le contrôle du respect des dispositions du règlement de jeu, l’analyse de la régularité de la participation, la gestion de la relation avec les participants, le pilotage, le reporting et les statistiques. Vous disposez d’un droit d’accès, de rectiﬁcation, de portabilité, d’effacement de vos données à caractère personnel et de limitation du traitement de vos données ainsi que d’un droit d’opposition et du droit de déﬁnir des directives relatives à la conservation, à l’effacement et à la communication de vos données à caractère personnel après votre décès. Pour en savoir plus sur la protection de vos données, consultez l’article 6 des mentions légales.
         </p>
       </div>
 
