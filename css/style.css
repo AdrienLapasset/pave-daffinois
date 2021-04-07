@@ -455,4 +455,8 @@ body {
 .mentions .content p {
   margin-bottom: 10px;
 }
+
+.mentions .content ul {
+  padding-left: 30px;
+}
 /*# sourceMappingURL=style.css.map */
