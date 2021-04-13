@@ -19,7 +19,13 @@
 
     <form class="form" action="">
       <input class="code" type="text" placeholder="Code Unique" required>
-      <input type="text" placeholder="Civilité*" required>
+
+      <div class="row-radio">
+        <label for="male">Mr.</label>
+        <input type="radio" id="huey" name="civility" value="male" checked>
+        <label for="female">Mme.</label>
+        <input type="radio" id="dewey" name="civility" value="female">
+      </div>
       <div class="row-input">
         <div>
           <input type="text" placeholder="Nom*" required>
@@ -36,12 +42,8 @@
           <input type="text" placeholder="Tèl*" required>
         </div>
       </div>
-      <!-- <div class="iban"> -->
-      <!-- <div class="square-container">
-         
-        </div> -->
+
       <input type="text" placeholder="IBAN*" maxlength="30" required>
-      <!-- </div> -->
       <div class="row-input">
         <div>
           <input type="text" placeholder="BIC*" required>

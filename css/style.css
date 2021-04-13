@@ -158,7 +158,7 @@ body {
   max-width: 800px;
 }
 
-.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"])::-webkit-input-placeholder {
+.home .form input.code:not([type="checkbox"]):not([type="radio"]), .home .form input.code:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   font-family: "Elkwood";
   color: #f7e285;
   font-size: 40px;
@@ -166,7 +166,7 @@ body {
   font-style: normal;
 }
 
-.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"]):-ms-input-placeholder {
+.home .form input.code:not([type="checkbox"]):not([type="radio"]), .home .form input.code:not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   font-family: "Elkwood";
   color: #f7e285;
   font-size: 40px;
@@ -174,7 +174,7 @@ body {
   font-style: normal;
 }
 
-.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"])::-ms-input-placeholder {
+.home .form input.code:not([type="checkbox"]):not([type="radio"]), .home .form input.code:not([type="checkbox"]):not([type="radio"])::-ms-input-placeholder {
   font-family: "Elkwood";
   color: #f7e285;
   font-size: 40px;
@@ -182,7 +182,7 @@ body {
   font-style: normal;
 }
 
-.home .form input.code:not([type="checkbox"]), .home .form input.code:not([type="checkbox"])::placeholder {
+.home .form input.code:not([type="checkbox"]):not([type="radio"]), .home .form input.code:not([type="checkbox"]):not([type="radio"])::placeholder {
   font-family: "Elkwood";
   color: #f7e285;
   font-size: 40px;
@@ -190,35 +190,35 @@ body {
   font-style: normal;
 }
 
-.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"])::-webkit-input-placeholder, .home .form .iban:before, .home .form .photo label {
+.home .form input:not([type="checkbox"]):not([type="radio"]), .home .form input:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder, .home .form .iban:before, .home .form .photo label {
   color: #888888;
   font-weight: 300;
   font-style: italic;
   font-size: 20px;
 }
 
-.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"]):-ms-input-placeholder, .home .form .iban:before, .home .form .photo label {
+.home .form input:not([type="checkbox"]):not([type="radio"]), .home .form input:not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder, .home .form .iban:before, .home .form .photo label {
   color: #888888;
   font-weight: 300;
   font-style: italic;
   font-size: 20px;
 }
 
-.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"])::-ms-input-placeholder, .home .form .iban:before, .home .form .photo label {
+.home .form input:not([type="checkbox"]):not([type="radio"]), .home .form input:not([type="checkbox"]):not([type="radio"])::-ms-input-placeholder, .home .form .iban:before, .home .form .photo label {
   color: #888888;
   font-weight: 300;
   font-style: italic;
   font-size: 20px;
 }
 
-.home .form input:not([type="checkbox"]), .home .form input:not([type="checkbox"])::placeholder, .home .form .iban:before, .home .form .photo label {
+.home .form input:not([type="checkbox"]):not([type="radio"]), .home .form input:not([type="checkbox"]):not([type="radio"])::placeholder, .home .form .iban:before, .home .form .photo label {
   color: #888888;
   font-weight: 300;
   font-style: italic;
   font-size: 20px;
 }
 
-.home .form input:not([type="checkbox"]) {
+.home .form input:not([type="checkbox"]):not([type="radio"]) {
   width: 100%;
   height: 70px;
   border-radius: 20px;
@@ -227,10 +227,32 @@ body {
   padding: 25px;
 }
 
-.home .form input:not([type="checkbox"]).code {
+.home .form input:not([type="checkbox"]):not([type="radio"]).code {
   background-color: #39434b;
   border: 2px solid #f7e285;
   text-shadow: 3px 3px 10px black;
+}
+
+.home .form .row-radio {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 26px;
+}
+
+.home .form .row-radio input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  margin: 0 30px 0 5px;
+}
+
+.home .form .row-radio label {
+  margin: 0;
 }
 
 .home .form .iban {
